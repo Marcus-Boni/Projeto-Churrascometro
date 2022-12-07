@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet">
+
+    <title>Projeto Churrascômetro</title>
+</head>
+
+<body>
+    <div class="nav_barra">
+        <hr>
+        <nav>
+            <img src="images/knife-regular-240.png">
+            <img src="images/fork-regular-240.png" class="inverter">
+        </nav>
+        <hr>
+    </div>
+    <main>
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h1>Churrascômetro</h1>
+                    <div class="descrição">
+                        <h6>Calcule a quantidade de comida e bebida necessárias para fazer um churrasco dependendo do
+                            número
+                            de
+                            pessoas e se elas são adultas ou crianças e quanto tempo vai ter a duração do churrasco.
+                        </h6>
+                    </div>
+                </div>
+                <div class="churrasco_area">
+                    <div class="churrasco_borda">
+                        <div class="churrasco_conteudo">
+                            <label>Quantidade de adultos</label>
+                            <input id="adultos" type="number" placeholder="Adultos">
+                            <label>Quantidade de crianças</label>
+                            <input id="crianças" type="number" placeholder="Crianças">
+                            <label>Duração do churrasco</label>
+                            <input id="duraçao" type="number" placeholder="Duração (h)">
+                            <div class="botao_area">
+                                <button class="btn">Calcular</button>
+                            </div>
+                            <div class="resultados">
+                                <div class="resultados_total">
+                                    <img src="images/carne.svg" alt="carregando...">
+                                    <p class="resultados_adultos"></p>
+                                </div>
+                                <div class="resultados_total">
+                                    <img src="images/cerveja.svg" alt="carregando...">
+                                    <p class="resultados_crianças"></p>
+                                </div>
+                                <div class="resultados_total">
+                                    <img src="images/refri.svg" alt="carregando...">
+                                    <p class="resultados_duraçao"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
